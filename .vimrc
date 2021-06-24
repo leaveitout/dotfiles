@@ -186,9 +186,9 @@ if has('gui_running')
 	"colorscheme solarized
         "set noantialias
         syntax enable
-        set background=dark
-        colorscheme Tomorrow-Night
-        "colorscheme base16-tomorrow
+        "set background=dark
+        "colorscheme Tomorrow-Night
+        colorscheme base16-tomorrow
 else
         " To use solarized, uncomment the following 4 lines
         "syntax enable
@@ -196,11 +196,11 @@ else
         "set t_Co=256
         "colorscheme solarized
         syntax enable
-        set background=dark
+        "set background=dark
         "set t_Co=256
         "let base16colorspace=256
-        "colorscheme base16-tomorrow
-        colorscheme Tomorrow-Night
+        colorscheme base16-tomorrow
+        "colorscheme Tomorrow-Night
 endif
 
 " Map F2 to NERDTree toggle
