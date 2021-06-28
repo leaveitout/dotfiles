@@ -2,6 +2,9 @@
 "set expandtab
 "set shiftwidth=2
 "set softtabstop=2
+" No error bells
+set visualbell
+set noerrorbells
 
 " Global subsitition, i.e. replace all instances in line, not just first
 set gdefault
@@ -110,7 +113,7 @@ nnoremap <Leader>hc "c
 """""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-nnoremap <leader><leader> :action VimFilePrevious<CR>
+nnoremap <leader><leader> <C-S-6>
 nnoremap <leader>p :action SearchEverywhere<CR>
 nnoremap <leader>P :action Switcher<CR>
 
@@ -204,3 +207,4 @@ vnoremap <leader>cc :action CommentGroup<CR>
 noremap <leader>cr :action ReformatCode<CR>
 "nnoremap <leader>cc :action CommentByLineComment<CR>
 "
+set ideajoin
